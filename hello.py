@@ -1,20 +1,13 @@
 
-name=input("what is your name ")
+#remove white spaces from str and capitalize the name#remove white spaces from str and capitalize the name
+name=input("what is your name ").strip().title()
 
-#remove white spaces from str
-name=name.strip()
+#getting the first name
+first , last=name.split(" ");  #split returns an array of string with each element separated by space
 
-#Capitalize name of user
-name=name.capitalize()
+print(f"hello {first}")  #using variables in a string without concatination
 
-#Capitalize first letter of each word
-name=name.title()
+#another method
+name=name.split(" ")[0]; #name=firstname
 
-print("hello " + name)
-
-# print("hello", name,name); #multiple argumrnts
-
-print("hello \"sir\""); #escape charecters (using double quotation inside double quotation)
-
-print(f"hello {name}")  #using variables in a string without concatination
 
