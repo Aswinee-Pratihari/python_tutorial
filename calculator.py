@@ -1,13 +1,10 @@
-#x=int(input("enter your first number"));
-#y=int(input("enter second number"));
+def main():
+    x=int(input("enter your  number"));
+    print(f"the square of the number is {square(x)}");
 
 
-x=float(input("enter your first number"));
-y=float(input("enter second number"));
-z=round(x+y);
+def square(x=0):
+    return pow(x,2);
 
-a=round(x/y,2);
 
-print(a);
-#number formating
-print(f"{z:,}");
+main();
