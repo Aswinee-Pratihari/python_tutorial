@@ -1,13 +1,13 @@
+def hello(name="world"):
+    return(f"hello {name}")
+    
 
-#remove white spaces from str and capitalize the name#remove white spaces from str and capitalize the name
-name=input("what is your name ").strip().title()
+print(hello());
+name=input("what is your name").title();
+print(hello(name));
 
-#getting the first name
-first , last=name.split(" ");  #split returns an array of string with each element separated by space
 
-print(f"hello {first}")  #using variables in a string without concatination
+# function def needs to be on top for them to be called afterwards
 
-#another method
-name=name.split(" ")[0]; #name=firstname
-
+# for this to change we can wrap the logic of our program in a main funtion and then define the functions afterwards
 
