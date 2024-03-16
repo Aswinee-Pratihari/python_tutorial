@@ -1,24 +1,40 @@
-x=int(input("Enter your first number "))
-y=int(input("Enter your second number "))
+# score=int(input("Enter your score "))
 
-""""
-if (x>y):
-    print("x is greater than y")
-elif x<y:
-    print("x is less than y")
+#method -1
+"""
+if(score>90 and score<=100):
+    print("Grade A")
+elif(score>60 and score<=90 ):
+    print("Grade B")
+elif(score>100 or score<0):
+    print("invalid score")
 else:
-    print("x is equal to y")
+    print("Grade C")
 """
 
+#method -2
 """
-if(x<y or x>y):
-    print("x is not equal to y")
+if(90<score<=100):
+    print("Grade A")
+elif(60<score<=90 ):
+    print("Grade B")
+elif(score>100 or score<0):
+    print("invalid score")
 else:
-    print("x is equal to y")
+    print("Grade C")
 """
 
 
-if(x!=y):
-    print("x is not equal to y")
-else:
-    print("x is equal to y")
+# even odd number
+def main():
+    x=int(input("enter your number"))
+    if(isEven(x)):
+        print("number is even")
+    else:
+        print("number is odd")
+
+
+def isEven(x):
+   # return True if x%2==0 else False ;
+    return x%2==0;
+main() 
