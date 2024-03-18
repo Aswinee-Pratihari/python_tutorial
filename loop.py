@@ -1,14 +1,35 @@
-i=3;
+"""
+while True:
+    n=int(input("what is value of n? "))
+    if n>0:
+        break;
 
-while(i!=0):
-    print("hello")
-    i-=1;
+for i in range(n):
+    print("hi "+ str(i+1) );
+"""
 
-for i in [1,2,3]:
-    print("hey")
+"""
+def main():
+    number=getNumber()
+    meow(number)
 
-for _ in range(3): #i replaced with _ means we dont need the variable
-    print("hi sir")
+def getNumber():
+    while True:
+        n=int(input("what is value of n? "))
+        if n>0:
+            return n;
 
-print("meow \n"*3,end="")
+def meow(n):
+    for _ in range(n):
+        print("meow")
+main()
+"""
 
+#LIST/ARRAY
+students=["Akash","Harry","Rakesh","Rohan"]
+
+for student in students:
+    print(student)
+
+for i in range(len(students)):
+    print(i+1,students[i])
